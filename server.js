@@ -20,6 +20,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use('/api/employees', router);
 
-app.listen(port, function(){
+app.listen(process.env.PORT || port, function(){
     console.log("Server running on 3000")
 });
