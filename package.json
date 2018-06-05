@@ -1,8 +1,8 @@
 {
-  "name": "EmployeeApp",
+  "name": "SuEmployeeApp",
   "version": "1.0.0",
   "description": "Datis project",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },

@@ -11,7 +11,20 @@ var empSchema = new mongoose.Schema({
     salary: String
 });
 
+
+
 var Employee = module.exports = mongoose.model('Employee', empSchema);
+
+//
+// var api = {
+//     addEmployee: addEmployee,
+//     getEmployees: getEmployees,
+//     getEmployee: getEmployee,
+//     updateEmployee: updateEmployee,
+//     deleteEmployee: deleteEmployee
+// };
+// return api;
+//
 
 module.exports.getEmployees = function (callback) {
     Employee.find(callback);
